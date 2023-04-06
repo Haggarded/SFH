@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIEffect_Demo", "UIEffect_Demo.csproj", "{03533bc6-bb1a-bc91-5c08-a84604346788}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{cc127605-9a93-f38d-d0d4-eb3e1a334fb8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03533bc6-bb1a-bc91-5c08-a84604346788}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03533bc6-bb1a-bc91-5c08-a84604346788}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{cc127605-9a93-f38d-d0d4-eb3e1a334fb8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{cc127605-9a93-f38d-d0d4-eb3e1a334fb8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
