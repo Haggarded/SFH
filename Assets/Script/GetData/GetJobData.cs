@@ -37,7 +37,7 @@ public class GetJobData : MonoBehaviour
         }
         set
         {
-            jobData.OriginHP = exprience;
+            jobData.exprience = value;
         }
     }
     public int HPGrowth
@@ -50,7 +50,7 @@ public class GetJobData : MonoBehaviour
         }
         set
         {
-            jobData.OriginHP = HPGrowth;
+            jobData.HPGrowth = value;
         }
     }
     public float originSpeed
@@ -79,4 +79,27 @@ public class GetJobData : MonoBehaviour
             jobData.SpeedGrowth = value;
         }
     }
+    public List<Gun_SO> GunStore
+    {
+        get
+        {
+            if (jobData != null)
+                return jobData.GunStore;
+            else return null;
+        }
+        set
+        { jobData.GunStore = value; }
+    }
+    public Gun_SO EquipGun
+    {
+        get
+        {
+            if (jobData != null)
+                return jobData.EquipGun;
+            else return null;
+        }
+        set
+        { jobData.EquipGun = value; }
+    }
+
 }

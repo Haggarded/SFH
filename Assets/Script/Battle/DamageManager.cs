@@ -25,10 +25,6 @@ public class DamageManager : MonoBehaviour
         {
             hPManager.Dead();
         }
-
-
-
-
     }
     public GameObject FindGameObject(GameObject RolePlace)
     {

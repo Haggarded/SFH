@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1484eafd6c071834e8b841c65862c399, type: 3}
   m_Name: Tower
   m_EditorClassIdentifier: 
-  job: 4
+  job: 3
   jobName: "\u91CD\u7532\u5175"
-  exprience: 0
+  exprience: 180
   HPGrowth: 15
   SpeedGrowth: 0.1
   OriginHP: 150
   originSpeed: 15
+  GunStore: []
+  EquipGun: {fileID: 11400000, guid: f9105aeda81410f478c5a306d82e3020, type: 2}

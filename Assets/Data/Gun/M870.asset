@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1530160ec4285c4e966d5838aef033a, type: 3}
+  m_Name: M870
+  m_EditorClassIdentifier: 
+  settingID: 100003
+  attack: 8
+  speed: 1
+  originOffset: 1
+  ammoCap: 8
+  reserveAmmo: 24
+  reloadSpeed: 3
+  recoil: 0.1
+  recoilRecover: 0.03
+  fadeDistance: 5
+  bulletNumber: 8
+  GunPng: {fileID: 21300000, guid: c9244e76906f9bd499c5817a82a4061c, type: 3}
+  L_handPos: {x: 0.43, y: -0.17}
+  R_handPos: {x: -0.92, y: -0.75}
+  GunMuzzlePos: {x: 2.76, y: 0.28}
+  PngOffset: {x: 2.72, y: -0.21}
+  audioSrc: 

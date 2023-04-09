@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1484eafd6c071834e8b841c65862c399, type: 3}
   m_Name: Rambo
   m_EditorClassIdentifier: 
-  job: 2
+  job: 1
   jobName: "\u673A\u67AA\u624B"
   exprience: 0
   HPGrowth: 12
   SpeedGrowth: 0.15
-  OriginHP: 0
+  OriginHP: 120
   originSpeed: 20
+  GunStore:
+  - {fileID: 11400000, guid: a32212820d903af46909bdd7d4b004c2, type: 2}
+  EquipGun: {fileID: 11400000, guid: a32212820d903af46909bdd7d4b004c2, type: 2}

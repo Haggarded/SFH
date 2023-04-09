@@ -5,8 +5,7 @@ using UnityEngine;
 public class Save_SO : ScriptableObject
 {
     public List<Job_SO> jobSave;
-    public List<Gun_SO> Store;
-    public List<Gun_SO> EquipGun;
     public int Gold;
+    public int CurrentRole;
 
 }

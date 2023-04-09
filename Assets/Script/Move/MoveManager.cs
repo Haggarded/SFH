@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MoveManager : MonoBehaviour
 {
-    public GetRoleData characterData;
+    public GetJobData jobData;
     public AnimationCurve curve;
     public LayerMask Ground;
     public GameObject PlayerHead;
@@ -21,7 +21,8 @@ public class MoveManager : MonoBehaviour
     public float z;
     void Start()
     {
-        speed = characterData.speed;
+        jobData=GetComponent<GetJobData>();
+        speed = jobData.originSpeed;
 
     }
 

@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class HPManager : MonoBehaviour
 {
-    public GetRoleData RoleData;
     public GetJobData jobData;
     public bool isdead;
     public float maxHP;
@@ -14,6 +13,7 @@ public class HPManager : MonoBehaviour
     public float currentArmor;
     public SoundManager soundManager;
     public UIManager uIManager;
+    public EventManager eventManager;
     // Start is called before the first frame update
     public Slider HPBar;
     public Slider ArmorBar;
@@ -42,13 +42,16 @@ public class HPManager : MonoBehaviour
     }
     void Start()
     {
-        RoleData = this.gameObject.GetComponent<GetRoleData>();
-        maxHP = RoleData.MaxHP;
-        maxArmor = RoleData.MaxArmor;
-        currentArmor = maxHP;
+        jobData = this.gameObject.GetComponent<GetJobData>();
+        int level = CalRoleLevel(jobData.exprience);
+        maxHP = jobData.OriginHP + level * jobData.HPGrowth;
+        uIManager = GameObject.Find("RoleInfo").GetComponent<UIManager>();
+        maxArmor = 0;
+        currentArmor = maxArmor;
         currentHP = maxHP;
         ChangeHPBar();
         soundManager = GetComponent<SoundManager>();
+        eventManager = GameObject.Find("EventManager").GetComponent<EventManager>();
     }
     public void Dead()
     {
@@ -56,13 +59,13 @@ public class HPManager : MonoBehaviour
         {
             isdead = true;
             soundManager.PlayDead();
-            Destroy(this.gameObject, 2);
+            eventManager.OutDead();
         }
     }
     public int CalRoleLevel(int exp)
     {
         int exprience = exp;
-        int level = 1;
+        int level = 0;
         int requireExp = 100;
         while (exprience > requireExp)
         {
@@ -70,13 +73,5 @@ public class HPManager : MonoBehaviour
             requireExp += 100;
         }
         return level;
-    }
-    public void CalDataByLevel(int level, int job, string valuetype)
-    {
-        switch (valuetype)
-        {
-
-        }
-
     }
 }

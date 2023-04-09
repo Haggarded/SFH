@@ -37,24 +37,34 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Script\Battle\DamageManager.cs" />
+     <Compile Include="Assets\Script\GetData\GetSaveData.cs" />
+     <Compile Include="Assets\Script\UI\MenuUI\GridManager.cs" />
      <Compile Include="Assets\Script\AI\EnemyAI.cs" />
      <Compile Include="Assets\Script\Battle\GunManager.cs" />
+     <Compile Include="Assets\Script\UI\MenuUI\ShopManager.cs" />
      <Compile Include="Assets\Script\ScriptObjct\Skill_SO.cs" />
      <Compile Include="Assets\Script\Battle\EnemyAttack.cs" />
+     <Compile Include="Assets\Script\Battle\ResourceManager.cs" />
      <Compile Include="Assets\Script\Sound\SoundManager.cs" />
      <Compile Include="Assets\Script\Move\MoveManager.cs" />
      <Compile Include="Assets\Script\ScriptObjct\Job_SO.cs" />
+     <Compile Include="Assets\Script\UI\MenuUI\RoleStoreManager.cs" />
+     <Compile Include="Assets\Script\UI\MenuUI\RoleSettingManager.cs" />
      <Compile Include="Assets\Script\ScriptObjct\Save_SO.cs" />
      <Compile Include="Assets\Script\UI\MenuUI\MenuUIManager.cs" />
+     <Compile Include="Assets\Script\UI\MenuUI\RoleInfoManager.cs" />
+     <Compile Include="Assets\Script\UI\MenuUI\RoleSkillManager.cs" />
      <Compile Include="Assets\Script\UI\MenuUI\CanvasManager.cs" />
-     <Compile Include="Assets\Script\GetData\GetGunData.cs" />
-     <Compile Include="Assets\Script\ScriptObjct\Character_SO.cs" />
-     <Compile Include="Assets\Script\ScriptObjct\Gun_SO.cs" />
-     <Compile Include="Assets\Script\Battle\HPManager.cs" />
-     <Compile Include="Assets\Script\GetData\GetRoleData.cs" />
-     <Compile Include="Assets\Script\UI\MenuUI\Masking.cs" />
-     <Compile Include="Assets\Script\UI\BattleUI\UIManager.cs" />
+     <Compile Include="Assets\Script\ScriptObjct\Map_SO.cs" />
      <Compile Include="Assets\Script\GetData\GetJobData.cs" />
+     <Compile Include="Assets\Script\GetData\GetGunData.cs" />
+     <Compile Include="Assets\Script\GetData\GetMapData.cs" />
+     <Compile Include="Assets\Script\ScriptObjct\Gun_SO.cs" />
+     <Compile Include="Assets\Script\GameManager\GameManager.cs" />
+     <Compile Include="Assets\Script\GameManager\EventManager.cs" />
+     <Compile Include="Assets\Script\Battle\HPManager.cs" />
+     <Compile Include="Assets\Script\UI\BattleUI\UIManager.cs" />
+     <Compile Include="Assets\Script\UI\MenuUI\ShopGrid.cs" />
     <Reference Include="UnityEngine">
         <HintPath>D:\unity\2020.3.38f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

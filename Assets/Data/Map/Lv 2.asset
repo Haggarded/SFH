@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12e39137570acef409cc534a3c76889d, type: 3}
+  m_Name: Lv 2
+  m_EditorClassIdentifier: 
+  level: 1
+  EnemyPoint:
+  - {x: 82.3, y: -9.2}
+  - {x: 130.1, y: -9.2}
+  - {x: 128.2, y: 4.1}
+  - {x: 203.6, y: -11.8}
+  - {x: 178.9, y: 20.3}
+  EnemyPrefab: {fileID: 6679552288508118763, guid: a2ca293758fb69c4c82159c1f3766969, type: 3}
+  info: "\u4F5C\u4E3A\u901A\u8FC7\u8BAD\u7EC3\u7684\u6218\u58EB\uFF0C\u4F60\u5E94\u8BE5\u4E3A\u7EF4\u62A4\u548C\u5E73\u732E\u4E0A\u81EA\u5DF1\u7684\u529B\u91CF"
+  Mapname: "\u521D\u751F\u725B\u728A"
+  image: {fileID: 21300000, guid: 76b89e9b33f44234197ad068a0a9c257, type: 3}

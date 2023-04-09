@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1484eafd6c071834e8b841c65862c399, type: 3}
   m_Name: Engineer
   m_EditorClassIdentifier: 
-  job: 1
+  job: 0
   jobName: "\u5DE5\u7A0B\u5E08"
-  exprience: 0
+  exprience: 1060
   HPGrowth: 10
   SpeedGrowth: 0.18
   OriginHP: 100
   originSpeed: 25
+  GunStore: []
+  EquipGun: {fileID: 11400000, guid: f9105aeda81410f478c5a306d82e3020, type: 2}

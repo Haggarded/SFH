@@ -29,6 +29,44 @@ public class MenuUIManager : MonoBehaviour
         UITransitionEffect transformEffect = GetComponent<UITransitionEffect>();
         transformEffect.Show(false);
     }
+    public void streamerIN()
+    {
+        UITransitionEffect transformEffect = GetComponent<UITransitionEffect>();
+        transformEffect.Show(false);
+
+    }
+    public void streamerOut()
+    {
+        UITransitionEffect transformEffect = GetComponent<UITransitionEffect>();
+        transformEffect.Hide(false);
+    }
+    public void ChangeInfo()
+    {
+        GetMapData mapData = GetComponent<GetMapData>();
+        int level = mapData.level;
+        string info = mapData.info;
+        Sprite Datasprite = mapData.image;
+        GameObject.Find("LevelInfo").GetComponent<Text>().text = level.ToString();
+        GameObject.Find("MissionInfo").GetComponent<Text>().text = info;
+        GameObject.Find("BattleView").GetComponent<Image>().sprite = Datasprite;
+        transform.root.gameObject.GetComponent<CanvasManager>().sence = mapData.level;
+    }
+    public void ChangeInfoToShop()
+    {
+        GameObject.Find("IconIn").GetComponent<Text>().text = "Shop";
+    }
+    public void ChangeInfoToInfo()
+    {
+        GameObject.Find("IconIn").GetComponent<Text>().text = "Information";
+    }
+    public void ChangeInfoToStore()
+    {
+        GameObject.Find("IconIn").GetComponent<Text>().text = "Store";
+    }
+    public void ChangeInfoToSkill()
+    {
+        GameObject.Find("IconIn").GetComponent<Text>().text = "Skill";
+    }
     public void Quit()
     {
 #if UNITY_EDITOR
@@ -36,6 +74,6 @@ public class MenuUIManager : MonoBehaviour
 #else
         Application.Quit();
 #endif
-
     }
+
 }

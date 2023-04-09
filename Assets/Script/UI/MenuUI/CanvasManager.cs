@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CanvasManager : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class CanvasManager : MonoBehaviour
     public GameObject MultPlayer;
     public GameObject Setting;
     public GameObject[] panels;
+    public int sence;
     public void Start()
     {
         panels = new GameObject[]
@@ -53,6 +55,14 @@ public class CanvasManager : MonoBehaviour
             panel.SetActive(panel == panelToShow);
         }
     }
+    public void StartGame()
+    {
+        if (sence != 0)
+        {
+            SceneManager.LoadScene(sence);
+        }
+    }
+
 
 
 }

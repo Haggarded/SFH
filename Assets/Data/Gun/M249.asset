@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1530160ec4285c4e966d5838aef033a, type: 3}
+  m_Name: M249
+  m_EditorClassIdentifier: 
+  settingID: 0
+  attack: 10
+  speed: 8
+  originOffset: 0.4
+  ammoCap: 80
+  reserveAmmo: 160
+  reloadSpeed: 3
+  recoil: 0.1
+  recoilRecover: 0.5
+  fadeDistance: 0
+  bulletNumber: 1
+  GunPng: {fileID: 21300000, guid: 46f8260f998c00741920b4f9abe45c3a, type: 3}
+  L_handPos: {x: -0.99, y: -1.93}
+  R_handPos: {x: -2.97, y: 0.91}
+  GunMuzzlePos: {x: 3.61, y: 0.19}
+  PngOffset: {x: 2.91, y: -1.93}
+  audioSrc: 

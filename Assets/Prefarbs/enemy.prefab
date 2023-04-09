@@ -84,7 +84,7 @@ MonoBehaviour:
   - {x: 0.066073425, y: 0.5646154, z: 0}
   m_ShapePathHash: -589513419
   m_Mesh: {fileID: 0}
-  m_InstanceId: -1926
+  m_InstanceId: 60552
 --- !u!1 &372751646067657844
 GameObject:
   m_ObjectHideFlags: 0
@@ -169,7 +169,7 @@ MonoBehaviour:
   - {x: -0.22142489, y: 0.39356804, z: 0}
   m_ShapePathHash: -199931394
   m_Mesh: {fileID: 0}
-  m_InstanceId: -1918
+  m_InstanceId: 60548
 --- !u!1 &716927039421450839
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,7 +360,7 @@ MonoBehaviour:
   - {x: -0.3545342, y: 0.5171184, z: 0}
   m_ShapePathHash: 1083206308
   m_Mesh: {fileID: 0}
-  m_InstanceId: -1804
+  m_InstanceId: 60620
 --- !u!1 &1664352685500404586
 GameObject:
   m_ObjectHideFlags: 0
@@ -445,7 +445,7 @@ MonoBehaviour:
   - {x: -0.419461, y: 0.25424543, z: 0}
   m_ShapePathHash: 1096293501
   m_Mesh: {fileID: 0}
-  m_InstanceId: -1828
+  m_InstanceId: 60584
 --- !u!1 &1840950697146545032
 GameObject:
   m_ObjectHideFlags: 0
@@ -1402,7 +1402,7 @@ MonoBehaviour:
   - {x: 0.101561196, y: 0.41207042, z: 0}
   m_ShapePathHash: 2000903635
   m_Mesh: {fileID: 0}
-  m_InstanceId: -1898
+  m_InstanceId: 60554
 --- !u!1 &3257788519909552630
 GameObject:
   m_ObjectHideFlags: 0
@@ -1839,7 +1839,7 @@ MonoBehaviour:
   - {x: 0.12502883, y: 0.11955701, z: 0}
   m_ShapePathHash: 1427798597
   m_Mesh: {fileID: 0}
-  m_InstanceId: -1812
+  m_InstanceId: 60546
 --- !u!1 &3924095577520547566
 GameObject:
   m_ObjectHideFlags: 0
@@ -3350,7 +3350,7 @@ MonoBehaviour:
   - {x: 0.057022363, y: 0.926179, z: 0}
   m_ShapePathHash: 632394685
   m_Mesh: {fileID: 0}
-  m_InstanceId: -1836
+  m_InstanceId: 60544
 --- !u!1 &5905062385664637789
 GameObject:
   m_ObjectHideFlags: 0
@@ -3540,10 +3540,10 @@ GameObject:
   m_Component:
   - component: {fileID: 3118185648059173473}
   - component: {fileID: 8766282706401197022}
+  - component: {fileID: 547515982507435079}
   - component: {fileID: 8766282706401197021}
   - component: {fileID: 8766282706401197018}
   - component: {fileID: 8766282706401197017}
-  - component: {fileID: 8766282706401197023}
   - component: {fileID: 308635827367666339}
   - component: {fileID: 6679552288508118740}
   - component: {fileID: 4068370785303137742}
@@ -3597,6 +3597,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &547515982507435079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6679552288508118763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9788c32862297bc4da8db6cd3ab85665, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jobData: {fileID: 11400000, guid: f328814558051ac49ae06f19a604783f, type: 2}
 --- !u!70 &8766282706401197021
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -3663,19 +3676,6 @@ MonoBehaviour:
     showGizmo: 1
   - color: {r: 0, g: 1, b: 0, a: 1}
     showGizmo: 1
---- !u!114 &8766282706401197023
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6679552288508118763}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff7e54803d5b84f4ba18e89a22155421, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterData: {fileID: 11400000, guid: 47d1fb065cf5c4a41a53c03babd8b7bd, type: 2}
 --- !u!212 &308635827367666339
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3739,7 +3739,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a57e5e4eef5a3264188fca1c0ca869ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RoleData: {fileID: 8766282706401197023}
+  jobData: {fileID: 0}
   isdead: 0
   maxHP: 0
   currentHP: 0
@@ -3747,6 +3747,7 @@ MonoBehaviour:
   currentArmor: 0
   soundManager: {fileID: 0}
   uIManager: {fileID: 0}
+  eventManager: {fileID: 0}
   HPBar: {fileID: 2407756793250709733}
   ArmorBar: {fileID: 2407756792195786291}
 --- !u!114 &4068370785303137742
@@ -3788,7 +3789,7 @@ MonoBehaviour:
   trend: 0
   currentattackTime: 0
   attackRange: 15
-  patrolTime: 0
+  patrolTime: 5
   currentTime: 0
   enemyAni: {fileID: 0}
   enemyRb: {fileID: 0}
@@ -3989,7 +3990,7 @@ MonoBehaviour:
   - {x: 0.07912171, y: 0.6470632, z: 0}
   m_ShapePathHash: -815318132
   m_Mesh: {fileID: 0}
-  m_InstanceId: -1792
+  m_InstanceId: 60550
 --- !u!1 &6851039954508540778
 GameObject:
   m_ObjectHideFlags: 0
@@ -4159,7 +4160,7 @@ MonoBehaviour:
   - {x: -0.071983315, y: 0.54265344, z: 0}
   m_ShapePathHash: -1258643654
   m_Mesh: {fileID: 0}
-  m_InstanceId: -1906
+  m_InstanceId: 60542
 --- !u!1 &7592385930901635141
 GameObject:
   m_ObjectHideFlags: 0
@@ -4567,7 +4568,7 @@ MonoBehaviour:
   - {x: -0.6775667, y: 1.375326, z: 0}
   m_ShapePathHash: 566076335
   m_Mesh: {fileID: 0}
-  m_InstanceId: -1784
+  m_InstanceId: 60556
 --- !u!1001 &8838040188129560910
 PrefabInstance:
   m_ObjectHideFlags: 0

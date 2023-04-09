@@ -42,7 +42,7 @@ public class GunManager : MonoBehaviour
 
         if (isReload && currentTime >= reloadTime && reserveAmmo > 0)
         {
-            if (maxReserveAmmo > maxAmmo)
+            if (reserveAmmo > maxAmmo)
             {
                 reserveAmmo -= maxAmmo - currentAmmo;
                 currentAmmo = maxAmmo;
@@ -175,6 +175,8 @@ public class GunManager : MonoBehaviour
     }
     private void Init()
     {
+        GunData.GunData = GameObject.Find("Player").GetComponent<GetJobData>().EquipGun;
+        uIManager=GameObject.Find("RoleInfo").GetComponent<UIManager>();
         FireTime = (float)1 / GunData.speed;
         currentTime = FireTime;
         maxAmmo = GunData.ammoCap;
